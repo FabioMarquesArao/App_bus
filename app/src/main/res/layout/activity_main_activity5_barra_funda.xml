@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rodoviaria"
+    tools:context=".MainActivity5_BarraFunda">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar5"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:background="@drawable/faixa_airport"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Escolha uma opção!"
+        android:textColor="@color/cinza"
+        android:textAllCaps="true"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar5" />
+
+    <Button
+        android:id="@+id/button10"
+        android:backgroundTint="@color/cinzaTransp"
+        android:layout_width="243dp"
+        android:layout_height="53dp"
+
+        android:layout_marginTop="24dp"
+        android:text="Boa Viagem"
+        android:textColor="@color/cinza"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:rippleColor="#C5CAE9" />
+
+    <Button
+        android:id="@+id/button11"
+        android:backgroundTint="@color/cinzaTransp"
+        android:layout_width="243dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="24dp"
+        android:text="Tietê"
+        android:textColor="@color/cinza"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button10"
+        app:rippleColor="#C5CAE9" />
+
+    <Button
+        android:id="@+id/button12"
+        android:backgroundTint="@color/cinzaTransp"
+        android:layout_width="243dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="24dp"
+        android:text="B. Funda"
+        android:textColor="@color/cinza"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button11"
+        app:rippleColor="#C5CAE9" />
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="By FabioMarquesArao"
+        android:textColor="@color/cinza"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
