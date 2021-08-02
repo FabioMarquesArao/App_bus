@@ -9,5 +9,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="cinza">#EAE9EA</color>
     <color name="azul">#104E8B</color>
-    <color name="cinzaTransp">#88000000</color>
+    <color name="cinzaTransp">#40000000</color>
+    <color name="red_transparent">#99CD0001</color>
 </resources>
