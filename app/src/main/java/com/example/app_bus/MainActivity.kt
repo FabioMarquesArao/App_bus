@@ -1,4 +1,4 @@
-package com.example.myapplication
+package com.example.app_bus
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -16,6 +16,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
         mp = MediaPlayer.create(this, R.raw.tete)
 
         button.setOnClickListener {
@@ -30,6 +31,8 @@ class MainActivity : AppCompatActivity() {
         button4.setOnClickListener {
             openNextActivit4() }
     }
+
+
 
     fun buttonClick(v: View) {
         mp.start()

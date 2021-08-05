@@ -1,11 +1,11 @@
-package com.example.myapplication
+package com.example.app_bus
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class MainActivity4_AvPaulista : AppCompatActivity() {
+class MainActivity3_Guarulhos : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main_activity4_av_paulista)
+        setContentView(R.layout.activity_main_activity3_guarulhos)
     }
 }

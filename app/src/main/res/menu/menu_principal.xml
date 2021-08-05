@@ -2,11 +2,24 @@
 <menu
 
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
     <item
         android:id="@+id/menu"
-        android:title="@string/menu_1"
+        android:title="@string/sobre_o_app"
         app:showAsAction="never"
-        />
+        android:iconTint="@color/cinza"
 
+
+
+
+        />
+    <item
+        android:id="@+id/menu2"
+        android:title="@string/sair"
+        app:showAsAction="never"
+        android:iconTint="@color/cinza"
+
+
+        />
 </menu>

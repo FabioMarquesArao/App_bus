@@ -11,4 +11,5 @@
     <color name="azul">#104E8B</color>
     <color name="cinzaTransp">#40000000</color>
     <color name="red_transparent">#99CD0001</color>
+    <color name="cinzaEscuro">#323031</color>
 </resources>

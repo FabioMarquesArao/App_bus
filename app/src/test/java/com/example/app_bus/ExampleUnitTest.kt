@@ -1,4 +1,4 @@
-package com.example.myapplication
+package com.example.app_bus
 
 import org.junit.Test
 
