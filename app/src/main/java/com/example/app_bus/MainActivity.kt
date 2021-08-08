@@ -6,18 +6,17 @@ import android.os.Bundle
 import android.media.MediaPlayer
 import android.view.View
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_main_congonhas.*
 
 
 class MainActivity : AppCompatActivity() {
 
 
     private lateinit var mp: MediaPlayer
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-
-        mp = MediaPlayer.create(this, R.raw.tete)
 
         button.setOnClickListener {
             openNextActivit() }
@@ -33,11 +32,6 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-
-    fun buttonClick(v: View) {
-        mp.start()
-    }
-
     private fun openNextActivit() {
         val intent = Intent(this, MainActivity_congonhas::class.java)
         startActivity(intent) }
@@ -52,7 +46,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun openNextActivit4() {
         val intent = Intent(this, MainActivity3_Guarulhos::class.java)
-        startActivity(intent)
-    }
+        startActivity(intent) }
+
+
 
 }

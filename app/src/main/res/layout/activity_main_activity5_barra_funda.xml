@@ -12,7 +12,7 @@
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar5"
         android:layout_width="0dp"
-        android:layout_height="35dp"
+        android:layout_height="40dp"
         android:background="@drawable/faixa_airport"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
@@ -22,7 +22,15 @@
         app:layout_constraintTop_toTopOf="parent"
 
         />
-
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/design_sem_nome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar5" />
 
     <ImageView
         android:id="@+id/imageView11"
@@ -51,15 +59,16 @@
         tools:ignore="VectorDrawableCompat" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="Escolha uma opção!"
+        android:layout_marginTop="36dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/escolha_o_audio"
         android:textColor="@color/cinza"
-        android:textAllCaps="true"
-        android:textSize="24sp"
+        android:textSize="26sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar5" />
 
@@ -68,16 +77,18 @@
         style="?attr/materialButtonOutlinedStyle"
         android:layout_width="246dp"
         android:layout_height="45dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="56dp"
         android:layout_marginRight="56dp"
         android:text="Boa Viagem"
+        android:onClick="buttonClick1"
         android:textColor="@color/cinza"
-        app:layout_constraintHorizontal_bias="0.111"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.111"
         app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar5"
-        app:rippleColor="#C5CAE9" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView21"
+        app:rippleColor="#C5CAE9"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <Button
         android:id="@+id/button11"
@@ -88,12 +99,14 @@
         android:layout_marginEnd="60dp"
         android:layout_marginRight="60dp"
         android:text="Tietê"
+        android:onClick="buttonClick2"
         android:textColor="@color/cinza"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.111"
         app:layout_constraintStart_toEndOf="@+id/imageView12"
         app:layout_constraintTop_toBottomOf="@+id/button10"
-        app:rippleColor="#C5CAE9" />
+        app:rippleColor="#C5CAE9"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <Button
         android:id="@+id/button12"
@@ -102,12 +115,14 @@
         android:layout_height="45dp"
         android:layout_marginTop="20dp"
         android:text="B. Funda"
+        android:onClick="buttonClick"
         android:textColor="@color/cinza"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.024"
         app:layout_constraintStart_toEndOf="@+id/imageView11"
         app:layout_constraintTop_toBottomOf="@+id/button11"
-        app:rippleColor="#C5CAE9" />
+        app:rippleColor="#C5CAE9"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <Button
         android:id="@+id/button25"
@@ -119,7 +134,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:rippleColor="#C5CAE9" />
+        app:rippleColor="#C5CAE9"
+        tools:ignore="TouchTargetSizeCheck" />
     <ImageView
         android:id="@+id/imageView10"
         android:layout_width="match_parent"
@@ -136,12 +152,11 @@
         android:id="@+id/imageView"
         android:layout_width="58dp"
         android:layout_height="45dp"
-
-        android:layout_marginTop="100dp"
+android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.073"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar5"
+        app:layout_constraintTop_toBottomOf="@+id/imageView21"
         app:srcCompat="@drawable/play_circle_black_24dp"
         tools:ignore="VectorDrawableCompat" />
 

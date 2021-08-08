@@ -35,6 +35,16 @@
         tools:ignore="ContentDescription" />
 
     <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/design_sem_nome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar7" />
+
+    <ImageView
         android:id="@+id/imageView9"
         android:layout_width="58dp"
         android:layout_height="45dp"
@@ -71,7 +81,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView6"
         app:srcCompat="@drawable/play_circle_black_24dp"
-        tools:ignore="VectorDrawableCompat" />
+        tools:ignore="VectorDrawableCompat,ImageContrastCheck" />
 
     <ImageView
         android:id="@+id/imageView6"
@@ -84,7 +94,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
         app:srcCompat="@drawable/play_circle_black_24dp"
-        tools:ignore="VectorDrawableCompat" />
+        tools:ignore="VectorDrawableCompat,ImageContrastCheck" />
 
     <TextView
         android:id="@+id/textView10"
@@ -104,11 +114,11 @@
         android:layout_height="45dp"
         android:layout_marginLeft="10dp"
 
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.045"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar7"
+        app:layout_constraintTop_toBottomOf="@+id/imageView21"
         app:srcCompat="@drawable/play_circle_black_24dp"
         tools:ignore="VectorDrawableCompat" />
 
@@ -116,51 +126,53 @@
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="36dp"
         android:fontFamily="sans-serif-light"
         android:text="@string/escolha_o_audio"
         android:textColor="@color/cinza"
-        android:textSize="30sp"
+        android:textSize="26sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar7" />
+        app:layout_constraintTop_toBottomOf="@+id/toolbar7"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button6"
+        style="?attr/materialButtonOutlinedStyle"
         android:layout_width="246dp"
         android:layout_height="45dp"
         android:layout_marginTop="20dp"
-        style="?attr/materialButtonOutlinedStyle"
         android:text="tietê"
         android:textColor="@color/cinza"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.111"
         app:layout_constraintStart_toEndOf="@+id/imageView6"
         app:layout_constraintTop_toBottomOf="@+id/button7"
-        app:rippleColor="#C5CAE9" />
+        app:rippleColor="#C5CAE9"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <Button
         android:id="@+id/button7"
         style="?attr/materialButtonOutlinedStyle"
         android:layout_width="246dp"
-        android:layout_height="45dp"
+        android:layout_height="48dp"
 
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="20dp"
         android:text="Boa viagem"
         android:textColor="@color/cinza"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.111"
         app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar7"
+        app:layout_constraintTop_toBottomOf="@+id/imageView21"
         app:rippleColor="#C5CAE9" />
 
     <Button
         android:id="@+id/button8"
-        android:layout_width="246dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="20dp"
         style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="246dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
         android:text="25 de março"
         android:textColor="@color/cinza"
         app:layout_constraintEnd_toEndOf="parent"
@@ -171,10 +183,10 @@
 
     <Button
         android:id="@+id/button9"
-        android:layout_width="246dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="20dp"
         style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="246dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
         android:text="paraíso"
         android:textColor="@color/cinza"
         app:layout_constraintEnd_toEndOf="parent"
@@ -185,9 +197,9 @@
 
     <Button
         android:id="@+id/button21"
+        style="?attr/materialButtonOutlinedStyle"
         android:layout_width="246dp"
         android:layout_height="45dp"
-        style="?attr/materialButtonOutlinedStyle"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="20dp"
@@ -197,7 +209,8 @@
         app:layout_constraintHorizontal_bias="0.013"
         app:layout_constraintStart_toEndOf="@+id/imageView8"
         app:layout_constraintTop_toBottomOf="@+id/button9"
-        app:rippleColor="#C5CAE9" />
+        app:rippleColor="#C5CAE9"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <Button
         android:id="@+id/button23"
@@ -209,7 +222,8 @@
         app:layout_constraintBottom_toBottomOf="@+id/imageView10"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:rippleColor="#C5CAE9" />
+        app:rippleColor="#C5CAE9"
+        tools:ignore="TouchTargetSizeCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

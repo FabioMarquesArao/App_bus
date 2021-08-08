@@ -1,11 +1,81 @@
 package com.example.app_bus
 
+import android.content.Intent
+import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.service.autofill.Validators.or
+import android.view.View
+import kotlinx.android.synthetic.main.activity_main_activity3_guarulhos.button25
+import kotlinx.android.synthetic.main.activity_main_activity5_barra_funda.*
+import kotlinx.android.synthetic.main.activity_main_congonhas.*
 
 class MainActivity5_BarraFunda : AppCompatActivity() {
+
+    private lateinit var mp: MediaPlayer
+    private lateinit var mp1: MediaPlayer
+    private lateinit var mp2: MediaPlayer
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_activity5_barra_funda)
+
+        mp = MediaPlayer.create(this, R.raw.barra)
+        mp1 = MediaPlayer.create(this, R.raw.ola)
+        mp2 = MediaPlayer.create(this, R.raw.tiete)
+
+        button25.setOnClickListener {
+            openNextActivit6() }
+
+
+
     }
+
+    fun buttonClick(v: View) {
+        if (mp.isPlaying){
+            mp.stop()
+            mp = MediaPlayer.create(this, R.raw.barra)
+        }else if(mp1.isPlaying){
+            mp1.stop()
+            mp = MediaPlayer.create(this, R.raw.barra)
+        }
+        else if (mp2.isPlaying){
+            mp2.stop()
+            mp = MediaPlayer.create(this, R.raw.barra)
+           }
+        mp.start()
+    }
+
+    fun buttonClick1(v: View) {
+        if (mp1.isPlaying){
+            mp1.stop()
+            mp1 = MediaPlayer.create(this, R.raw.ola)
+        }else if(mp.isPlaying){
+            mp.stop()
+            mp1 = MediaPlayer.create(this, R.raw.ola)
+        }
+        else if (mp2.isPlaying){
+            mp2.stop()
+            mp1 = MediaPlayer.create(this, R.raw.ola)
+        }
+        mp1.start()}
+
+    fun buttonClick2(v: View) {
+        if (mp2.isPlaying){
+            mp2.stop()
+            mp2 = MediaPlayer.create(this, R.raw.tiete)
+        }else if(mp1.isPlaying){
+            mp1.stop()
+            mp2 = MediaPlayer.create(this, R.raw.tiete)
+        }
+        else if (mp.isPlaying){
+            mp.stop()
+            mp2 = MediaPlayer.create(this, R.raw.tiete)
+        }
+        mp2.start()
+    }
+
+    private fun openNextActivit6() {
+        val intent = Intent(this, MainActivity::class.java)
+        startActivity(intent) }
 }

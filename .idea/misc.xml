@@ -5,10 +5,10 @@
       <map>
         <entry key="app/src/main/res/drawable/play_circle_black_24dp.xml" value="0.19270833333333334" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.22" />
-        <entry key="app/src/main/res/layout/activity_main_activity3_guarulhos.xml" value="0.5" />
-        <entry key="app/src/main/res/layout/activity_main_activity4_av_paulista.xml" value="0.22" />
-        <entry key="app/src/main/res/layout/activity_main_activity5_barra_funda.xml" value="0.22" />
-        <entry key="app/src/main/res/layout/activity_main_congonhas.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_main_activity3_guarulhos.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_main_activity4_av_paulista.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_main_activity5_barra_funda.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_main_congonhas.xml" value="0.25" />
         <entry key="app/src/main/res/menu/menu_principal.xml" value="0.33" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.209375" />
       </map>
