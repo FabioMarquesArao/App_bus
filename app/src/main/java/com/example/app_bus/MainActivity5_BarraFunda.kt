@@ -32,45 +32,55 @@ class MainActivity5_BarraFunda : AppCompatActivity() {
     }
 
     fun buttonClick(v: View) {
-        if (mp.isPlaying){
-            mp.stop()
-            mp = MediaPlayer.create(this, R.raw.barra)
-        }else if(mp1.isPlaying){
-            mp1.stop()
-            mp = MediaPlayer.create(this, R.raw.barra)
+        when {
+            mp.isPlaying -> {
+                mp.stop()
+                mp = MediaPlayer.create(this, R.raw.barra)
+            }
+            mp1.isPlaying -> {
+                mp1.stop()
+                mp = MediaPlayer.create(this, R.raw.barra)
+            }
+            mp2.isPlaying -> {
+                mp2.stop()
+                mp = MediaPlayer.create(this, R.raw.barra)
+            }
         }
-        else if (mp2.isPlaying){
-            mp2.stop()
-            mp = MediaPlayer.create(this, R.raw.barra)
-           }
         mp.start()
     }
 
     fun buttonClick1(v: View) {
-        if (mp1.isPlaying){
-            mp1.stop()
-            mp1 = MediaPlayer.create(this, R.raw.ola)
-        }else if(mp.isPlaying){
-            mp.stop()
-            mp1 = MediaPlayer.create(this, R.raw.ola)
+        when {
+            mp1.isPlaying -> {
+                mp1.stop()
+                mp1 = MediaPlayer.create(this, R.raw.ola)
+            }
+            mp.isPlaying -> {
+                mp.stop()
+                mp1 = MediaPlayer.create(this, R.raw.ola)
+            }
+            mp2.isPlaying -> {
+                mp2.stop()
+                mp1 = MediaPlayer.create(this, R.raw.ola)
+            }
         }
-        else if (mp2.isPlaying){
-            mp2.stop()
-            mp1 = MediaPlayer.create(this, R.raw.ola)
-        }
-        mp1.start()}
+        mp1.start()
+    }
 
     fun buttonClick2(v: View) {
-        if (mp2.isPlaying){
-            mp2.stop()
-            mp2 = MediaPlayer.create(this, R.raw.tiete)
-        }else if(mp1.isPlaying){
-            mp1.stop()
-            mp2 = MediaPlayer.create(this, R.raw.tiete)
-        }
-        else if (mp.isPlaying){
-            mp.stop()
-            mp2 = MediaPlayer.create(this, R.raw.tiete)
+        when {
+            mp2.isPlaying -> {
+                mp2.stop()
+                mp2 = MediaPlayer.create(this, R.raw.tiete)
+            }
+            mp1.isPlaying -> {
+                mp1.stop()
+                mp2 = MediaPlayer.create(this, R.raw.tiete)
+            }
+            mp.isPlaying -> {
+                mp.stop()
+                mp2 = MediaPlayer.create(this, R.raw.tiete)
+            }
         }
         mp2.start()
     }
