@@ -12,10 +12,6 @@ import kotlinx.android.synthetic.main.activity_main_congonhas.*
 
 class MainActivity5_BarraFunda : AppCompatActivity() {
 
-    private lateinit var mp: MediaPlayer
-    private lateinit var mp1: MediaPlayer
-    private lateinit var mp2: MediaPlayer
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_activity5_barra_funda)
@@ -25,11 +21,16 @@ class MainActivity5_BarraFunda : AppCompatActivity() {
         mp2 = MediaPlayer.create(this, R.raw.tiete)
 
         button25.setOnClickListener {
-            openNextActivit6() }
-
-
-
+            openNextActivit6()
+            mp.stop()
+            mp1.stop()
+            mp2.stop()
+        }
     }
+
+    private lateinit var mp: MediaPlayer
+    private lateinit var mp1: MediaPlayer
+    private lateinit var mp2: MediaPlayer
 
     fun buttonClick(v: View) {
         when {
