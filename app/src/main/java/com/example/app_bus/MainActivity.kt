@@ -3,16 +3,12 @@ package com.example.app_bus
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.media.MediaPlayer
-import android.view.View
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.activity_main_congonhas.*
+
 
 
 class MainActivity : AppCompatActivity() {
 
-
-    private lateinit var mp: MediaPlayer
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,19 +29,19 @@ class MainActivity : AppCompatActivity() {
 
 
     private fun openNextActivit() {
-        val intent = Intent(this, MainActivity_congonhas::class.java)
+        val intent = Intent(this, MainActivityCongonhas::class.java)
         startActivity(intent) }
 
     private fun openNextActivit2() {
-        val intent = Intent(this, MainActivity5_BarraFunda::class.java)
+        val intent = Intent(this, MainActivity5BarraFunda::class.java)
         startActivity(intent) }
 
     private fun openNextActivit3() {
-        val intent = Intent(this, MainActivity4_AvPaulista::class.java)
+        val intent = Intent(this, MainActivity4AvPaulista::class.java)
         startActivity(intent)}
 
     private fun openNextActivit4() {
-        val intent = Intent(this, MainActivity3_Guarulhos::class.java)
+        val intent = Intent(this, MainActivity3Guarulhos::class.java)
         startActivity(intent) }
 
 

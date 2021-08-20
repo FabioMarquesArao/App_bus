@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fundo_escuro"
-    tools:context=".MainActivity3_Guarulhos">
+    tools:context=".MainActivity3Guarulhos">
 
     <ImageView
         android:id="@+id/imageView4"
@@ -18,7 +18,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3"
         app:srcCompat="@drawable/play_circle_black_24dp"
-        tools:ignore="VectorDrawableCompat" />
+        tools:ignore="VectorDrawableCompat"
+        android:contentDescription="@string/todo" />
+
     <ImageView
         android:id="@+id/imageView22"
         android:layout_width="match_parent"
@@ -73,7 +75,7 @@
         android:layout_width="246dp"
         android:layout_height="45dp"
         android:layout_marginTop="20dp"
-        android:text="TIetê"
+        android:text="@string/tiete"
         android:onClick="buttonTiete"
         android:textColor="@color/cinza"
         app:layout_constraintEnd_toEndOf="parent"
@@ -103,7 +105,7 @@
         android:layout_width="246dp"
         android:layout_height="45dp"
         android:layout_marginTop="20dp"
-        android:text="Boa viagem"
+        android:text="@string/boa_viagem"
         android:onClick="buttonBoaViagem"
         android:textColor="@color/cinza"
         app:layout_constraintEnd_toEndOf="parent"
@@ -119,7 +121,7 @@
         android:layout_width="246dp"
         android:layout_height="45dp"
         android:layout_marginTop="20dp"
-        android:text="terminal 3"
+        android:text="@string/terminal_3"
         android:onClick="buttonTerminalTres"
         android:textColor="@color/cinza"
         app:layout_constraintEnd_toEndOf="parent"
@@ -135,7 +137,7 @@
         android:layout_width="246dp"
         android:layout_height="45dp"
         android:layout_marginTop="20dp"
-        android:text="terminal 2"
+        android:text="@string/terminal_2"
         android:onClick="buttonTerminalDois"
         android:textColor="@color/cinza"
         app:layout_constraintEnd_toEndOf="parent"
@@ -151,7 +153,7 @@
         android:layout_width="246dp"
         android:layout_height="45dp"
         android:layout_marginTop="20dp"
-        android:text="República"
+        android:text="@string/republica"
         android:onClick="buttonRepublica"
         android:textColor="@color/cinza"
         app:layout_constraintEnd_toEndOf="parent"
@@ -166,7 +168,7 @@
         android:layout_width="wrap_content"
         android:layout_height="45dp"
         android:layout_marginBottom="36dp"
-        android:text="voltar"
+        android:text="@string/voltar"
         android:textColor="@color/cinza"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -191,9 +193,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
-        android:text="By FabioMarquesArao"
+        android:text="@string/by_fabiomarquesarao"
         android:textColor="@color/cinza"
-        android:textSize="10dp"
+        android:textSize="11sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -209,7 +211,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView22"
         app:srcCompat="@drawable/play_circle_black_24dp"
-        tools:ignore="VectorDrawableCompat" />
+        tools:ignore="VectorDrawableCompat"
+        android:contentDescription="@string/todo" />
 
     <ImageView
         android:id="@+id/imageView1"
@@ -222,6 +225,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
         app:srcCompat="@drawable/play_circle_black_24dp"
-        tools:ignore="VectorDrawableCompat" />
+        tools:ignore="VectorDrawableCompat"
+        android:contentDescription="@string/todo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/fundo_escuro"
     android:id="@+id/menu"
-    tools:context=".MainActivity_congonhas">
+    tools:context=".MainActivityCongonhas">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar7"
@@ -144,6 +144,7 @@
         android:layout_height="45dp"
         android:layout_marginTop="20dp"
         android:text="tietê"
+        android:onClick="buttonTiete2"
         android:textColor="@color/cinza"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.111"
@@ -160,6 +161,7 @@
 
         android:layout_marginTop="20dp"
         android:text="Boa viagem"
+        android:onClick="buttonViagem2"
         android:textColor="@color/cinza"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.111"
@@ -174,6 +176,7 @@
         android:layout_height="48dp"
         android:layout_marginTop="20dp"
         android:text="25 de março"
+        android:onClick="buttonVinte2"
         android:textColor="@color/cinza"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.111"
@@ -188,6 +191,7 @@
         android:layout_height="48dp"
         android:layout_marginTop="20dp"
         android:text="paraíso"
+        android:onClick="buttonParaiso2"
         android:textColor="@color/cinza"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.111"
@@ -204,6 +208,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginTop="20dp"
         android:text="congonhas"
+        android:onClick="buttonCongonhas2"
         android:textColor="@color/cinza"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.013"

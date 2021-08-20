@@ -4,13 +4,11 @@ import android.content.Intent
 import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.service.autofill.Validators.or
 import android.view.View
 import kotlinx.android.synthetic.main.activity_main_activity3_guarulhos.button25
-import kotlinx.android.synthetic.main.activity_main_activity5_barra_funda.*
-import kotlinx.android.synthetic.main.activity_main_congonhas.*
 
-class MainActivity5_BarraFunda : AppCompatActivity() {
+
+class MainActivity5BarraFunda : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

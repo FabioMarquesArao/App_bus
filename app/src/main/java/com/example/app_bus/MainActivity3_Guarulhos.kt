@@ -7,7 +7,7 @@ import android.os.Bundle
 import android.view.View
 import kotlinx.android.synthetic.main.activity_main_activity3_guarulhos.*
 
-class MainActivity3_Guarulhos : AppCompatActivity() {
+class MainActivity3Guarulhos : AppCompatActivity() {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,8 +17,8 @@ class MainActivity3_Guarulhos : AppCompatActivity() {
         mp3 = MediaPlayer.create(this, R.raw.ola)
         mp4 = MediaPlayer.create(this, R.raw.tiete)
         mp5 = MediaPlayer.create(this, R.raw.republica)
-        mp6 = MediaPlayer.create(this, R.raw.ola)
-        mp7 = MediaPlayer.create(this, R.raw.ola)
+        mp6 = MediaPlayer.create(this, R.raw.terminal2)
+        mp7 = MediaPlayer.create(this, R.raw.terminal3)
 
         button24.setOnClickListener {
             openNextActivit8()
@@ -27,7 +27,7 @@ class MainActivity3_Guarulhos : AppCompatActivity() {
             mp5.stop()
             mp6.stop()
             mp7.stop()
-    }
+        }
 
 
     }
@@ -38,7 +38,7 @@ class MainActivity3_Guarulhos : AppCompatActivity() {
     private lateinit var mp7: MediaPlayer
 
 
-    fun buttonBoaViagem(v: View) {
+    fun buttonBoaViagem(v:View) {
         when {
             mp3.isPlaying -> {
                 mp3.stop()
@@ -64,7 +64,7 @@ class MainActivity3_Guarulhos : AppCompatActivity() {
         mp3.start()
     }
 
-    fun buttonTiete(v: View) {
+    fun buttonTiete(v:View) {
         when {
             mp4.isPlaying -> {
                 mp4.stop()
@@ -90,7 +90,7 @@ class MainActivity3_Guarulhos : AppCompatActivity() {
         mp4.start()
     }
 
-    fun buttonRepublica(v: View) {
+    fun buttonRepublica(v:View) {
         when {
             mp5.isPlaying -> {
                 mp5.stop()

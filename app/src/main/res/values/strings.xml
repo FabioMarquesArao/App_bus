@@ -3,4 +3,22 @@
     <string name="sair">Sair</string>
     <string name="sobre_o_app">Sobre o app</string>
     <string name="escolha_o_audio">Escolha o Áudio</string>
+    <string name="para_onde_voce_vai">Para onde você vai?</string>
+    <string name="congonhas">Congonhas</string>
+    <string name="barra_funda">Barra Funda</string>
+    <string name="av_paulista">Av. Paulista</string>
+    <string name="by_fabiomarquesarao">By FabioMarquesArao</string>
+    <string name="guarulhos">Guarulhos</string>
+    <string name="voltar">voltar</string>
+    <string name="tiete">TIetê</string>
+    <string name="boa_viagem">Boa viagem</string>
+    <string name="terminal_3">terminal 3</string>
+    <string name="terminal_2">terminal 2</string>
+    <string name="republica">República</string>
+    <string name="todo">TODO</string>
+    <string name="estacao_luz">estação luz</string>
+    <string name="ibis_pta">ibis pta</string>
+    <string name="h_renaissance">h.renaissance</string>
+    <string name="h_intercont">h.intercont.</string>
+    <string name="h_macksoud">h.macksoud</string>
 </resources>

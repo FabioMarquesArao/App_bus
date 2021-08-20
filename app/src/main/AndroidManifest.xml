@@ -9,10 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
-        <activity android:name="com.example.app_bus.MainActivity_congonhas"></activity>
-        <activity android:name="com.example.app_bus.MainActivity5_BarraFunda" />
-        <activity android:name="com.example.app_bus.MainActivity4_AvPaulista" />
-        <activity android:name="com.example.app_bus.MainActivity3_Guarulhos" />
+        <activity android:name="com.example.app_bus.MainActivityCongonhas"></activity>
+        <activity android:name="com.example.app_bus.MainActivity5BarraFunda" />
+        <activity android:name="com.example.app_bus.MainActivity4AvPaulista" />
+        <activity android:name="com.example.app_bus.MainActivity3Guarulhos" />
         <activity android:name="com.example.app_bus.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
