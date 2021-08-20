@@ -245,31 +245,31 @@ class MainActivity4AvPaulista : AppCompatActivity() {
             when {
                 mp19.isPlaying -> {
                     mp19.stop()
-                    mp19 = MediaPlayer.create(this, R.raw.renaiscensse)
+                    mp19 = MediaPlayer.create(this, R.raw.macksoud)
                 }
                 mp13.isPlaying -> {
                     mp13.stop()
-                    mp19 = MediaPlayer.create(this, R.raw.renaiscensse)
+                    mp19 = MediaPlayer.create(this, R.raw.macksoud)
                 }
                 mp14.isPlaying -> {
                     mp14.stop()
-                    mp19 = MediaPlayer.create(this, R.raw.renaiscensse)
+                    mp19 = MediaPlayer.create(this, R.raw.macksoud)
                 }
                 mp15.isPlaying -> {
                     mp15.stop()
-                    mp19 = MediaPlayer.create(this, R.raw.renaiscensse)
+                    mp19 = MediaPlayer.create(this, R.raw.macksoud)
                 }
                 mp16.isPlaying -> {
                     mp16.stop()
-                    mp19 = MediaPlayer.create(this, R.raw.renaiscensse)
+                    mp19 = MediaPlayer.create(this, R.raw.macksoud)
                 }
                 mp17.isPlaying -> {
                     mp17.stop()
-                    mp19 = MediaPlayer.create(this, R.raw.renaiscensse)
+                    mp19 = MediaPlayer.create(this, R.raw.macksoud)
                 }
                 mp18.isPlaying -> {
                     mp18.stop()
-                    mp19 = MediaPlayer.create(this, R.raw.renaiscensse)
+                    mp19 = MediaPlayer.create(this, R.raw.macksoud)
                 }
             }
             mp19.start()
