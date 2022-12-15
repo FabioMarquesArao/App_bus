@@ -18,5 +18,10 @@ Após clicar na opção desejada irá para a tela seguinte como demonstrada a se
 
 O app pode ser modificado e adaptado para qualquer tipo de transporte utilizando as informações especificas de cada seguimento, por exemplo ônibus rodoviario, turismo disparando audios com informaçoes sobre os pontos turísticos etc...
 
+## Feedback
+
+Se você tiver algum feedback, por favor nos deixe saber por meio de fabinhoarao@gmail.com
+
+
 
 
